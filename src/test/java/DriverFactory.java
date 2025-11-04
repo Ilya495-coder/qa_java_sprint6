@@ -6,11 +6,11 @@ public class DriverFactory {
     private WebDriver driver;
 
     public DriverFactory(){
-   //     if("firefox".equals(System.getProperty("browser"))){
+        if("firefox".equals(System.getProperty("browser"))){
           setupFirefox();
-     //   }else{
-     //       setupChrome();
-    //    }
+        }else{
+            setupChrome();
+        }
    }
 
     public void setupFirefox(){
